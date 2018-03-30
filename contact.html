@@ -47,10 +47,10 @@
         <div id="submission_form">
           <p class="subheader">* all fields required</p>
           <form id="contact" method="POST" action="https://formspree.io/contact@officialbrightside.com">
-            <input type="text" name="firstname" placeholder="First name">
-            <input type="text" name="lastname" placeholder="Last name">
-            <input type="email" name="email" placeholder="Email address">
-            <textarea name="message" placeholder="Write your message here..."></textarea>
+            <input type="text" name="firstname" placeholder="First name" required>
+            <input type="text" name="lastname" placeholder="Last name" required>
+            <input type="email" name="email" placeholder="Email address" required>
+            <textarea name="message" placeholder="Write your message here..." required></textarea>
             <input type="text" name="_gotcha" style="display:none" />
             <button type="submit">Send</button>
           </form>
