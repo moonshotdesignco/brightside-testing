@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,49 +20,40 @@
   <script src="menu.js"></script>
   <title>Media x Brightside</title>
 </head>
+
 <body>
-  <div id="menu-wrapper">
-    <div class="menu-side-bar">
-      <a class="menu-link" href="index.html">Home</a>
-      <a class="menu-link" href="media.html">Media</a>
-      <a class="menu-link" href="live.html">Live</a>
-      <a class="menu-link" href="about.html">About</a>
-      <a class="menu-link" href="contact.html">Contact</a>
-      <p class="menu-link">&mdash;</p>
-      <span id="social-icons">
-        <a class="social" href="https://www.facebook.com/officialbrightside"><i class="fab fa-facebook fa-lg fa-fw"></i> Facebook</a>
-        <a class="social" href="https://www.twitter.com/heybrightside"><i class="fab fa-twitter fa-lg fa-fw"></i> Twitter</a>
-        <a class="social" href="https://www.instagram.com/officialbrightside"><i class="fab fa-instagram fa-lg fa-fw"></i> Instagram</a>
-        <a class="social" href="https://itunes.apple.com/us/artist/brightside/943290044"><i class="fab fa-itunes-note fa-lg fa-fw"></i> iTunes</a>
-        <a class="social" href="https://open.spotify.com/artist/6Olw6iYoJS2VQZ5RWaUUWS"><i class="fab fa-spotify fa-lg fa-fw"></i> Spotify</a>
-        <a class="social" href="https://officialbrightside.bandcamp.com/"><i class="fab fa-bandcamp fa-lg fa-fw"></i> Bandcamp</a>
-        <a class="social" href="https://www.youtube.com/officialbrightsidetv"><i class="fab fa-youtube fa-lg fa-fw"></i> YouTube</a>
-      </span>
-    </div>
-  </div>
-  <div id="content-wrapper">
-    <div class="menu-trigger">&plus;</div>
-    <div class="main-content">
-      <p class="title">Music</p>
-      <div class="content" id="music">
-        <img class="cover" src="images/heartscience.jpg" />
-        <img class="cover" src="images/aeiou.jpg" />
-        <img class="cover" src="images/lightsaspark.jpg" />
-        <img class="cover" src="images/feelslikefiction.jpg" />
+
+  <div class="container">
+
+    <div class="body-container">
+      <div class="nav-bar">
+        <img src="images/logo-gray.png" alt="Brightside" class="logo" />
+        <div class="menu-button"><i class="fas fa-plus"></i></div>
       </div>
-      <p class="title">Videos</p>
-      <div class="content" id="videos">
-        <iframe class="video" src="https://www.youtube.com/embed/vdMrMayHFv8" frameborder="0" allowfullscreen></iframe>
-        <iframe class="video" src="https://www.youtube.com/embed/rTZxzsUVxVM" frameborder="0" allowfullscreen></iframe>
-        <iframe class="video" src="https://www.youtube.com/embed/xaxPIxVI3Mg" frameborder="0" allowfullscreen></iframe>  
-      </div>
-      <p class="title">Photos</p>
-      <div class="content" id="photos">
-        <!-- GrahamSnaps Widget Embed -->
-        <div id="gs-grid" class="gs-kwNvzh6j86J4Uw"></div>
-        <script>(function(a,b,c,d,e){if(!(e in a)){a.gs=function(){a.gs.q.push(arguments);};a.gs.q=[];}var f=b.createElement(c);f.src=d;f.async=!0;var g=b.getElementsByTagName(c)[0];g.parentNode.insertBefore(f,g);})(window,document,"script","https://cdn.grahamsnaps.com/js/grid.js","gs");gs("Grid", "kwNvzh6j86J4Uw");</script>
+      <div class="body-content">
+        <h1>Music</h1>
+        <p class="body">Music goes here.</p>
+        <h1>Videos</h1>
+        <p class="body">Videos go here.</p>
+        <h1>Photos</h1>
+        <p class="body">Photo widget goes here.</p>
       </div>
     </div>
+
+    <div class="menu-container">
+      <ul class="no-bullet">
+        <li><a href="index.html" class="menu-link">Home</a></li>
+        <li><a href="media.html" class="menu-link">Media</a></li>
+        <li><a href="live.html" class="menu-link">Live</a></li>
+        <li><a href="about.html" class="menu-link">About</a></li>
+        <li><a href="contact.html" class="menu-link">Contact</a></li>
+        <li>&nbsp;</li>
+        <li><a href="#" class="menu-link" id="close-button">Close</a></li>
+      </ul>
+    </div>
+
   </div>
+
 </body>
+
 </html>

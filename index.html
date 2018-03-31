@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,31 +20,35 @@
   <script src="menu.js"></script>
   <title>Brightside</title>
 </head>
+
 <body>
-  <div id="menu-wrapper">
-    <div class="menu-side-bar">
-      <a class="menu-link" href="index.html">Home</a>
-      <a class="menu-link" href="media.html">Media</a>
-      <a class="menu-link" href="live.html">Live</a>
-      <a class="menu-link" href="about.html">About</a>
-      <a class="menu-link" href="contact.html">Contact</a>
-      <p class="menu-link">&mdash;</p>
-      <span id="social-icons">
-        <a class="social" href="https://www.facebook.com/officialbrightside"><i class="fab fa-facebook fa-lg fa-fw"></i> Facebook</a>
-        <a class="social" href="https://www.twitter.com/heybrightside"><i class="fab fa-twitter fa-lg fa-fw"></i> Twitter</a>
-        <a class="social" href="https://www.instagram.com/officialbrightside"><i class="fab fa-instagram fa-lg fa-fw"></i> Instagram</a>
-        <a class="social" href="https://itunes.apple.com/us/artist/brightside/943290044"><i class="fab fa-itunes-note fa-lg fa-fw"></i> iTunes</a>
-        <a class="social" href="https://open.spotify.com/artist/6Olw6iYoJS2VQZ5RWaUUWS"><i class="fab fa-spotify fa-lg fa-fw"></i> Spotify</a>
-        <a class="social" href="https://officialbrightside.bandcamp.com/"><i class="fab fa-bandcamp fa-lg fa-fw"></i> Bandcamp</a>
-        <a class="social" href="https://www.youtube.com/officialbrightsidetv"><i class="fab fa-youtube fa-lg fa-fw"></i> YouTube</a>
-      </span>
+
+  <div class="container">
+
+    <div class="body-container">
+      <div class="nav-bar">
+        <img src="images/logo-gray.png" alt="Brightside" class="logo" />
+        <div class="menu-button"><i class="fas fa-plus"></i></div>
+      </div>
+      <div class="body-content">
+        <p class="body"></p>
+      </div>
     </div>
-  </div>
-  <div id="content-wrapper">
-    <div class="menu-trigger">&plus;</div>
-    <div class="main-content">
-      <img class="logo" src="images/logo-gray.png" />
+
+    <div class="menu-container">
+      <ul class="no-bullet">
+        <li><a href="index.html" class="menu-link">Home</a></li>
+        <li><a href="media.html" class="menu-link">Media</a></li>
+        <li><a href="live.html" class="menu-link">Live</a></li>
+        <li><a href="about.html" class="menu-link">About</a></li>
+        <li><a href="contact.html" class="menu-link">Contact</a></li>
+        <li>&nbsp;</li>
+        <li><a href="#" class="menu-link" id="close-button">Close</a></li>
+      </ul>
     </div>
+
   </div>
+
 </body>
+
 </html>
