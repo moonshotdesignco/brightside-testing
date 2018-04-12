@@ -1,11 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css" type="text/css">
+
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="description" content="Brightside // Official website of Brightside, a five-piece pop/rock band from Tallahassee, FL. Heart Science EP available now on iTunes/Apple Music, Spotify, and more.">
+  <meta name="keywords" content="brightside,official,band,music,tallahassee,florida,usa,pop,rock,indie,alternative,feels,like,fiction,aeiou,lights,a,spark,heart,science,itunes,apple,spotify">
   <link rel="icon" type="image/x-icon" href="favicons/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
@@ -13,38 +16,53 @@
   <link rel="manifest" href="favicons/manifest.json">
   <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#00ffff">
   <meta name="theme-color" content="#ffffff">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://use.fontawesome.com/releases/v5.0.6/js/brands.js"></script>
-  <script src="https://use.fontawesome.com/releases/v5.0.6/js/solid.js"></script>
-  <script src="https://use.fontawesome.com/releases/v5.0.6/js/fontawesome.js"></script>
-  <script src="menu.js"></script>
-  <title>Brightside</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="brightside.js" type="text/javascript"></script>
+  <script src="https://use.fontawesome.com/d0022ece64.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200,400" rel="stylesheet">
+  <title>Brightside // Official Website</title>
+
 </head>
+
 
 <body>
 
-  <div class="container">
+  <div id="main">
 
-    <div class="body-container">
-      <div class="nav-bar">
-        <img src="images/logo-gray.png" alt="Brightside" class="logo" />
-        <div class="menu-button"><i class="fas fa-plus"></i></div>
-      </div>
-      <div class="body-content">
-        <p class="body"></p>
-      </div>
+    <i id="scrollUp" class="fa fa-chevron-circle-up fa-3x" aria-hidden="true" alt="Scroll to top" title="Scroll to top"></i>
+
+    <a href="/" alt="www.OfficialBrightside.com" title="www.OfficialBrightside.com"><img class="logo" src="images/logo.png" /></a>
+
+    <div id="social">
+
+      <a href="https://www.facebook.com/officialbrightside" alt="Brightside on Facebook" title="Brightside on Facebook"><i class="fa fa-2x fa-facebook fa-fw"></i></a>
+      <a href="https://www.twitter.com/heybrightside" alt="Brightside on Twitter" title="Brightside on Twitter"><i class="fa fa-2x fa-twitter fa-fw"></i></a>
+      <a href="https://www.instagram.com/officialbrightside" alt="Brightside on Instagram" title="Brightside on Instagram"><i class="fa fa-2x fa-instagram fa-fw"></i></a>
+      <a href="https://itunes.apple.com/us/artist/brightside/id943290044" alt="Brightside on iTunes/Apple Music" title="Brightside on iTunes/Apple Music"><i class="fa fa-2x fa-apple fa-fw"></i></a>
+      <a href="https://open.spotify.com/artist/6Olw6iYoJS2VQZ5RWaUUWS" alt="Brightside on Spotify" title="Brightside on Spotify"><i class="fa fa-2x fa-spotify fa-fw"></i></a>
+      <a href="https://www.youtube.com/officialbrightsidetv" alt="Brightside on YouTube" title="Brightside on YouTube"><i class="fa fa-2x fa-youtube-play fa-fw"></i></a>
+
     </div>
 
-    <div class="menu-container">
-      <ul class="no-bullet">
-        <li><a href="index.html" class="menu-link">Home</a></li>
-        <li><a href="media.html" class="menu-link">Media</a></li>
-        <li><a href="live.html" class="menu-link">Live</a></li>
-        <li><a href="about.html" class="menu-link">About</a></li>
-        <li><a href="contact.html" class="menu-link">Contact</a></li>
-        <li>&nbsp;</li>
-        <li><a href="#" class="menu-link" id="close-button">Close</a></li>
-      </ul>
+    <div class="container">
+
+      <a class="menu" id="music" href="music" alt="Music" title="Music"><img class="logoSection" id="music" src="images/music.png" /></a>
+      <a class="menu" id="videos" href="videos" alt="Videos" title="Videos"><img class="logoSection" id="videos" src="images/videos.png" /></a>
+      <a class="menu" id="members" href="members" alt="Members" title="Members"><img class="logoSection" id="members" src="images/members.png" /></a>
+      <a class="menu" id="tour" href="tour" alt="Tour Dates" title="Tour Dates"><img class="logoSection" id="tour" src="images/tour.png" /></a>
+      <a class="menu" id="contact" href="contact" alt="Contact" title="Contact"><img class="logoSection" id="contact" src="images/contact.png" /></a>
+      <a class="menu" id="merch" href="https://officialbrightside.bandcamp.com" alt="Merch" title="Merch"><img id="merch" src="images/merch.png" /></a>
+
+    </div>
+
+    <div id="copyright">
+
+      photos by <a href="http://www.blackandhuephotography.com">Black & Hue Photography</a>
+      <br />site design by <a href="https://moonshotdesignco.com">Moonshot Design Co.</a>
+      <br />copyright &copy; 2018 Brightside
+      <br />all rights reserved
+      <br /><img src="images/drop-white.png" style="width: 1.5em;"/>
+
     </div>
 
   </div>
