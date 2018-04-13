@@ -82,6 +82,7 @@
   img.album {
     width: 100%;
     height: initial;
+    padding: 0.5em 0 0;
   }
 
   div.album {
@@ -297,6 +298,11 @@
     background-size: contain;
   }
 
+  div.section#contact div#contactform {
+    max-width: 440px;
+    margin: auto;
+  }
+
   div#copyright {
     font-size: 1.5em;
   }
@@ -311,7 +317,7 @@
 
   img.logo {
     width: initial;
-    height: 9em;
+    height: 8em;
   }
 
   div#social {
@@ -393,11 +399,6 @@
 
   i#scrollUp:hover {
     color: white;
-  }
-
-  img.logo {
-    width: initial;
-    height: 6em;
   }
 
   img.logo:hover {
@@ -489,11 +490,6 @@
 
   div.section#contact {
     padding: 0;
-  }
-
-  div.section#contact div#contactform {
-    max-width: 440px;
-    margin: auto;
   }
 
   div#copyright {
