@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   $("img.album").click(function() {
 
-    $("body").css("overflow", "hidden");
+    $("body").css({"position": "relative", "overflow": "hidden"});
 
     if ($(this).attr("id") == "las") {
       $("div.album#las").fadeIn();
@@ -18,7 +18,7 @@ $(document).ready(function() {
 
   $("img.bio").click(function() {
 
-    $("body").css("overflow", "hidden");
+    $("body").css({"position": "relative", "overflow": "hidden"});
 
     if ($(this).attr("id") == "con") {
       $("div.bio#con").fadeIn();
@@ -37,7 +37,7 @@ $(document).ready(function() {
   $("span.close").click(function() {
 
     $("div.album, div.bio").fadeOut();
-    $("body").css("overflow", "initial");
+    $("body").css({"position": "initial", "overflow": "initial"});
 
   });
 
