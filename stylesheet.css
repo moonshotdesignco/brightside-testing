@@ -22,11 +22,11 @@
     color: white;
   }
 
-  i#scrollUp {
+  #scrollUp {
     display: none;
     position: fixed;
-    bottom: 0.5em;
-    right: 0.5em;
+    bottom: 1.5em;
+    right: 1.5em;
     z-index: 1;
   }
 
@@ -70,7 +70,7 @@
   img.album {
     width: 100%;
     height: initial;
-    padding: 0.5em 0 0;
+    padding: 0.5em 0;
   }
 
   div.album {
@@ -144,6 +144,7 @@
     position: relative;
     padding-bottom: 56.25%;
     height: 0;
+    margin-top: 1em;
   }
 
   div.videoWrapper iframe {
@@ -174,10 +175,10 @@
     content: "";
     display: block;
     position: fixed;
-    top: -0.4em;
-    left: -0.4em;
-    width: calc(100% + 0.8em);
-    height: calc(100% + 0.8em);
+    top: -0.5em;
+    left: -0.5em;
+    width: calc(100% + 1em);
+    height: calc(100% + 1em);
     background-position: center;
     background-size: cover;
     z-index: -1;
@@ -350,7 +351,7 @@
   img.album {
     width: 24em;
     height: 24em;
-    margin: 0.25em;
+    padding: 0.5em;
   }
 
   div.flexContainer#membersFlex {
@@ -392,12 +393,8 @@
     background: transparent;
   }
 
-  i#scrollUp {
-    color: rgba(255, 255, 255, 0.7);
-  }
-
-  i#scrollUp:hover {
-    color: white;
+  #scrollUp:hover {
+    filter: drop-shadow(0em 0em 0.2em white);
   }
 
   img.logo:hover {
@@ -412,12 +409,8 @@
     float: right;
   }
 
-  div#social a i:hover {
-    filter: drop-shadow(0em 0em 0.1em white);
-  }
-
-  .fa-2x {
-    font-size: 2em !important;
+  div#social a:hover {
+    filter: drop-shadow(0em 0em 0.15em white);
   }
 
   img.logoSection, img#merch {
@@ -453,7 +446,6 @@
   img.album {
     width: 15em;
     height: 15em;
-    margin: 0.5em;
   }
 
   img.album, img.bio {
@@ -469,12 +461,8 @@
   }
 
   div.section#videos {
-    width: 61.8%;
+    width: 900px;
     margin: auto;
-  }
-
-  div.videoWrapper {
-    margin-bottom: 3em;
   }
 
   img.bio {
