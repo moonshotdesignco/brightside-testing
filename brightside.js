@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
-  $("img.album").click(function() {
+  $("img.album, img.bio").click(function() {
 
-    $("html").css("overflow", "hidden");
+    $("html").css({"overflow": "hidden", "position": "relative"});
 
     if ($(this).attr("id") == "las") {
       $("div.album#las").fadeIn();
@@ -12,15 +12,7 @@ $(document).ready(function() {
       $("div.album#flf").fadeIn();
     } else if ($(this).attr("id") == "hs") {
       $("div.album#hs").fadeIn();
-    }
-
-  });
-
-  $("img.bio").click(function() {
-
-    $("html").css("overflow", "hidden");
-
-    if ($(this).attr("id") == "con") {
+    } else if ($(this).attr("id") == "con") {
       $("div.bio#con").fadeIn();
     } else if ($(this).attr("id") == "jake") {
       $("div.bio#jake").fadeIn();
@@ -37,7 +29,7 @@ $(document).ready(function() {
   $("span.close").click(function() {
 
     $("div.album, div.bio").fadeOut();
-    $("html").css("overflow", "initial");
+    $("html").css({"overflow": "initial", "position": "initial"});
 
   });
 
@@ -54,8 +46,8 @@ $(document).ready(function() {
   $("#scrollUp").click(function() {
 
     $("html, body").animate({scrollTop: 0},500);
-		return false;
-
+    return false;
+    
 	});
 
 });
