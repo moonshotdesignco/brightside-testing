@@ -2,6 +2,8 @@ $(document).ready(function() {
 
   $("img.album").click(function() {
 
+    $("body").css("overflow", "hidden");
+
     if ($(this).attr("id") == "las") {
       $("div.album#las").fadeIn();
     } else if ($(this).attr("id") == "aei") {
@@ -15,6 +17,9 @@ $(document).ready(function() {
   });
 
   $("img.bio").click(function() {
+
+    $("body").css("overflow", "hidden");
+
     if ($(this).attr("id") == "con") {
       $("div.bio#con").fadeIn();
     } else if ($(this).attr("id") == "jake") {
@@ -26,27 +31,29 @@ $(document).ready(function() {
     } else if ($(this).attr("id") == "cor") {
       $("div.bio#cor").fadeIn();
     }
+
   });
 
   $("span.close").click(function() {
 
     $("div.album, div.bio").fadeOut();
+    $("body").css("overflow", "initial");
 
   });
 
   $(window).scroll(function() {
 
 		if ($(this).scrollTop() > 200) {
-			$("i#scrollUp").fadeIn();
+			$("#scrollUp").fadeIn();
 		} else {
-			$("i#scrollUp").fadeOut();
+			$("#scrollUp").fadeOut();
 		}
 
 	});
 
-  $("i#scrollUp").click(function() {
+  $("#scrollUp").click(function() {
 
-    $("html, body").animate({scrollTop : 0},500);
+    $("html, body").animate({scrollTop: 0},500);
 		return false;
 
 	});
