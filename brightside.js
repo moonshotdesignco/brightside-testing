@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   $("img.album, img.bio").click(function() {
 
-    $("html").css({"overflow": "hidden", "position": "relative"});
+    $("html").addClass("info-open");
 
     if ($(this).attr("id") == "las") {
       $("div.album#las").fadeIn();
@@ -29,7 +29,7 @@ $(document).ready(function() {
   $("span.close").click(function() {
 
     $("div.album, div.bio").fadeOut();
-    $("html").css({"overflow": "initial", "position": "initial"});
+    $("html").removeClass("info-open");
 
   });
 

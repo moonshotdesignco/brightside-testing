@@ -1,5 +1,11 @@
 @media all {
 
+  html.info-open {
+    -webkit-overflow-scrolling: auto;
+    overflow: hidden;
+    position: relative;
+  }
+
   body {
     width: 100%;
     height: 100%;
