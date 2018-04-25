@@ -45,8 +45,8 @@ a {
 }
 
 .main-menu-link {
-  font-size: 4rem;
-  line-height: 4rem;
+  font-size: 3rem;
+  line-height: 3.25rem;
   font-weight: 300;
   text-transform: lowercase;
 }
@@ -194,11 +194,6 @@ form#contact button {
 
   .social-icons-link:hover, .main-menu-link-a:hover {
     filter: drop-shadow(0rem 0rem 0.15rem white);
-  }
-
-  .main-menu-link {
-    font-size: 3rem;
-    line-height: 3rem;
   }
 
   .body-content {
