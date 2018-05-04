@@ -126,14 +126,15 @@ a {
   grid-row: 1 / span 1;
 }
 
+.member-info {
+  padding: 0 0.75rem;
+  margin: auto 0;
+}
+
 .member-info#will, .member-info#dillon {
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
   text-align: right;
-}
-
-.member-info {
-  padding: 0.75rem;
 }
 
 .member-info-p {
@@ -230,7 +231,8 @@ form#contact button {
   }
 
   .member-info {
-    padding: 1rem;
+    padding: 0 1rem;
+    margin: auto 0;
   }
 
   .member-info-p {
@@ -282,7 +284,8 @@ form#contact button {
   }
 
   .member-info {
-    padding: 2rem;
+    padding: 0 2rem;
+    margin: auto 0;
   }
 
 }
