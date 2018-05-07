@@ -194,6 +194,10 @@ form#contact button {
   font-size: 0.75rem;
 }
 
+.centered-copyright#copyright {
+  margin: auto;
+}
+
 
 
 @media screen and (min-width: 600px) {
