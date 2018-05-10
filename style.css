@@ -44,11 +44,8 @@ a {
   margin: auto;
 }
 
-.main-menu-link {
-  font-size: 3rem;
-  line-height: 3.25rem;
-  font-weight: 300;
-  text-transform: lowercase;
+.main-menu-link-img {
+  width: 100%;
 }
 
 #music-container {
@@ -197,6 +194,11 @@ form#contact button {
 
 @media screen and (min-width: 600px) {
 
+  .main-menu-link-img {
+    width: initial;
+    height: 5rem;
+  }
+
   #music-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -228,6 +230,11 @@ form#contact button {
 
   #main-menu {
     grid-column: 1 / span 2;
+  }
+
+  .main-menu-link-img {
+    height: 2.5rem;
+    margin-top: 0.75rem;
   }
 
   .body-content {
