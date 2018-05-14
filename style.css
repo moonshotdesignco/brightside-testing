@@ -46,6 +46,7 @@ a {
 
 .main-menu-link-img {
   width: 100%;
+  margin-top: 0.5rem;
 }
 
 #music-container {
@@ -197,6 +198,7 @@ form#contact button {
   .main-menu-link-img {
     width: initial;
     height: 5rem;
+    margin-top: 0.5rem;
   }
 
   #music-container {
