@@ -13,9 +13,10 @@ body {
 .block {
   background: url("images/background.png") bottom left/contain no-repeat;
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
   height: 100%;
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
