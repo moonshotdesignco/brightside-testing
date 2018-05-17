@@ -1,15 +1,16 @@
 $(document).ready(function() {
 
-  $(window, document, "html", "body").click(function() {
-    $(".menu").slideUp();
-  });
-
-  $(".menu-trigger button").click(function() {
+  $(".menu-trigger button").click(function(e) {
+    e.stopPropagation();
     $(".menu").slideToggle();
   });
 
-  $(".menu-trigger button, .menu").click(function(e) {
+  $(".menu").click(function(e) {
     e.stopPropagation();
+  });
+  
+  $(document, "html").click(function() {
+    $(".menu").slideUp();
   });
 
 });
