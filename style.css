@@ -30,16 +30,35 @@ body {
   height: 100%;
 }
 
-.menu-trigger button {
+.menu-trigger-container {
+  height: 48px;
+  margin-top: 1rem;
+  overflow: hidden;
+}
+
+.menu-trigger {
   border: none;
   color: #97f0dd;
-  text-transform: uppercase;
-  font: inherit;
-  font-size: 1.5rem;
+  font-family: monospace;
+  font-size: 2rem;
   font-weight: 800;
   background: #ffffff;
-  padding: 0.5rem 1rem;
-  margin: 1rem 1rem 0 0;
+  height: 48px;
+  width: 48px;
+  text-align: center;
+  padding: 0.5rem 0;
+  margin: auto 1rem auto auto;
+  cursor: pointer;
+}
+
+.menu-trigger p {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.open {
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 
 .menu {
@@ -75,7 +94,6 @@ a {
 
 .block-section {
   padding: 0.5rem 1rem;
-  background: #97f0ddcc;
 }
 
 .block-section h1 {
@@ -120,7 +138,7 @@ a {
   min-width: initial !important;
   width: 100% !important;
   text-align: initial !important;
-  background: #76b6a6 !important;
+  background: #76b6a6dd !important;
   padding-bottom: 0 !important;
 }
 
@@ -137,28 +155,20 @@ a {
 }
 
 
-@media screen and (min-width: 400px), (orientation: landscape) {
+@media screen and (min-width: 900px), (orientation: landscape) {
 
   .menu {
     width: -webkit-min-content;
     width: -moz-min-content;
     width: min-content;
-    max-width: 370px;
     margin-left: auto;
     margin-right: 1rem;
     margin-bottom: 1rem;
     border: 2px solid #ffffff;
   }
   
-  .block-section {
-    margin: 0;
-    border: none;
-    background: none;
-  }
-
   .bit-widget {
     font-size: initial !important;
-    background: #56a696dd !important;
   }
 
   .bit-button {

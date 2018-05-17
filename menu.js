@@ -1,16 +1,12 @@
 $(document).ready(function() {
 
-  $(".menu-trigger button").click(function(e) {
-    e.stopPropagation();
+  $(".menu-trigger").click(function() {
+    if ($(".menu").css("display") == "none") {
+      $(".menu-trigger p").addClass("open");
+    } else {
+      $(".menu-trigger p").removeClass("open");
+    }
     $(".menu").slideToggle();
-  });
-
-  $(".menu").click(function(e) {
-    e.stopPropagation();
-  });
-  
-  $(document, "html").click(function() {
-    $(".menu").slideUp();
   });
 
 });
