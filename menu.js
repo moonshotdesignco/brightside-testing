@@ -8,7 +8,7 @@ $(document).ready(function() {
     e.stopPropagation();
   });
   
-  $(window).click(function() {
+  $(window, document, "html", "body").click(function() {
     $(".menu").slideUp();
   });
 
