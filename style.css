@@ -86,10 +86,6 @@ a {
   margin: 0;
 }
 
-.menu a:hover, .menu a:focus {
-  background-color: #97f0dd;
-}
-
 .block-section {
   padding: 72px 1rem 0.5rem 1rem;
 }
@@ -98,46 +94,11 @@ a {
   text-transform: uppercase;
 }
 
-.media-link-btn {
-  border: none;
-  color: inherit;
-  padding: 0.75rem 1.5rem;
-  text-transform: uppercase;
-  font: inherit;
-  font-weight: 600;
-  margin-top: 0.25rem;
-  width: 100%;
-}
-
-.media-link-btn#apple {
-  background-color: #ff3b30;
-}
-
-.media-link-btn#spotify {
-  background-color: #1DB954;
-}
-
-.media-link-btn#youtube {
-  background-color: #FF0000;
-}
-
-.media-link-btn#instagram {
-  background-color: #D83274;
-}
-
-.media-link-btn#twitter {
-  background-color: #1DA1F2;
-}
-
-.media-link-btn#facebook {
-  background-color: #3B5998;
-}
-
 .bit-widget {
   min-width: initial !important;
   width: 100% !important;
   text-align: initial !important;
-  background: #76b6a6dd !important;
+  background: #76d6c6 !important;
   padding-bottom: 0 !important;
 }
 
@@ -153,6 +114,48 @@ a {
   width: 7rem !important;
 }
 
+#contactform {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.75rem;
+  margin: 0 0 0 auto;
+  background: #76d6c6;
+  border-radius: 0.25rem;
+}
+
+.subheader {
+  font-size: 0.75rem;
+  margin: 0 0 0.375rem 0;
+}
+
+form#contact * {
+  font: inherit;
+  border-radius: 0.25rem;
+  border: none;
+}
+
+form#contact input, form#contact textarea {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 0 0.5rem 0;
+  padding: 0.5rem;
+}
+
+form#contact textarea {
+  resize: vertical;
+  height: 6rem;
+}
+
+form#contact button {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: #369686;
+  padding: 0.5rem 1.75rem;
+  cursor: pointer;
+}
+
+
 @media screen and (min-width: 600px), (orientation: landscape) {
 
   .media-link-btn {
@@ -163,14 +166,49 @@ a {
 
 @media screen and (min-width: 900px), (orientation: landscape) {
 
-  .menu {
+  body {
+    display: grid;
+    grid-template-columns: auto min-content;
+    grid-template-rows: auto;
+  }
+
+  .menu-container {
+    grid-template-rows: auto;
+    position: initial;
     width: -webkit-min-content;
     width: -moz-min-content;
     width: min-content;
-    margin-left: auto;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    border: 2px solid #ffffff;
+    margin: 0;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .menu-trigger-container {
+    display: none;
+  }
+  
+  .menu {
+    display: block;
+    position: sticky;
+    top: 1rem;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    margin: 1rem 1rem 1rem 0;
+    border: none;
+  }
+
+  .menu a:hover, .menu a:focus {
+    background-color: #97f0dd;
+  }
+  
+  .block-section {
+    padding: 1rem;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
   }
 
   .bit-widget {
@@ -181,4 +219,12 @@ a {
     width: 9rem !important;
   }
 
+  #contactform {
+    margin: 0 0 0 auto;
+  }
+
+  form#contact button:hover {
+    background: #569686;
+  }
+  
 }
