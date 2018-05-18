@@ -20,13 +20,19 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   width: 100%;
   height: 100%;
-  min-height: 100vh;
   -webkit-overflow-scrolling: touch;
   text-align: right;
 }
 
+.menu-container {
+  position: absolute;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 64px auto;
+}
+
 .menu-trigger-container {
-  height: 64px;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -57,8 +63,6 @@ body {
 
 .menu {
   display: none;
-  position: absolute;
-  right: 0;
   z-index: 999;
   width: 100%;
   padding-left: 0.875rem;
@@ -87,7 +91,7 @@ a {
 }
 
 .block-section {
-  padding: 0.5rem 1rem;
+  padding: 72px 1rem 0.5rem 1rem;
 }
 
 .block-section h1 {
