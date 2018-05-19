@@ -133,6 +133,7 @@ a {
 .block-section {
   padding: 72px 1rem 0.5rem 1rem;
   z-index: initial;
+  position: initial;
 }
 
 .menu-open {
