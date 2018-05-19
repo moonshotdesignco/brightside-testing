@@ -137,7 +137,7 @@ a {
 .block-section h1 {
   text-transform: uppercase;
   background: #76d6c6;
-  padding-right: 0.75rem;
+  padding-right: 0.625rem;
 }
 
 .bit-widget-container {
@@ -171,7 +171,6 @@ a {
   padding: 0.75rem;
   margin: 0 0 0 auto;
   background: #76d6c6;
-  border-radius: 0.25rem;
 }
 
 .subheader {
