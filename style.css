@@ -63,7 +63,7 @@ body {
 
 .menu {
   display: none;
-  z-index: 99;
+  z-index: 1;
   width: 100%;
   background: #76d6c6;
 }
@@ -185,7 +185,6 @@ form#contact * {
 
 form#contact input, form#contact textarea {
   width: 100%;
-  max-width: 100%;
   margin: 0 0 0.5rem 0;
   padding: 0.5rem;
 }
@@ -193,6 +192,7 @@ form#contact input, form#contact textarea {
 form#contact textarea {
   resize: vertical;
   height: 6rem;
+  position: initial;
 }
 
 form#contact button {
