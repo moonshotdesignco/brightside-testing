@@ -63,7 +63,7 @@ body {
 
 .menu {
   display: none;
-  /* z-index: 999; */
+  z-index: 99;
   width: 100%;
   background: #76d6c6;
 }
