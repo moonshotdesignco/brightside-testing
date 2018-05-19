@@ -65,11 +65,6 @@ body {
   display: none;
   z-index: 999;
   width: 100%;
-  padding-left: 0.875rem;
-  padding-top: 0.375rem;
-  padding-bottom: 0.375rem;
-  border-top: 2px solid #ffffff;
-  border-bottom: 2px solid #ffffff;
   background: #76d6c6;
 }
 
@@ -83,7 +78,50 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.875rem;
   font-size: 1.375rem;
+  padding-left: 0.875rem;
   margin: 0;
+  width: 100%;
+}
+
+.menu a#home {
+  background-color: white;
+  color: #97f0dd;
+}
+
+.menu a#fb {
+  background-color: #4267B2;
+}
+
+.menu a#tw {
+  background-color: #55acee;
+}
+
+.menu a#ig {
+  background-color: #e13267;
+}
+
+.menu a#am {
+  background-color: #ff2d55;
+}
+
+.menu a#sp {
+  background-color: #1DB954;
+}
+
+.menu a#yt {
+  background-color: #ff0000;
+}
+
+.menu a#bc {
+  background-color: #61929c;
+}
+
+.menu a#bit {
+  background-color: #00B4B3;
+}
+
+.menu a#co {
+  background-color: #ff002b;
 }
 
 .block-section {
@@ -92,6 +130,11 @@ a {
 
 .block-section h1 {
   text-transform: uppercase;
+}
+
+.bit-widget-container {
+  max-width: 500px !important;
+  margin-left: auto !important;
 }
 
 .bit-widget {
@@ -116,7 +159,7 @@ a {
 
 #contactform {
   width: 100%;
-  max-width: 400px;
+  max-width: 350px;
   padding: 0.75rem;
   margin: 0 0 0 auto;
   background: #76d6c6;
@@ -158,13 +201,20 @@ form#contact button {
 
 @media screen and (min-width: 600px), (orientation: landscape) {
 
-  .media-link-btn {
-    width: initial;
+  .menu {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    border: 2px solid white;
+    margin: 0 1rem 1rem auto;
   }
 
 }
 
-@media screen and (min-width: 900px), (orientation: landscape) {
+@media screen and (min-width: 1200px) {
 
   body {
     display: grid;
@@ -175,9 +225,6 @@ form#contact button {
   .menu-container {
     grid-template-rows: auto;
     position: initial;
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
     margin: 0;
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
@@ -191,20 +238,65 @@ form#contact button {
     display: block;
     position: sticky;
     top: 1rem;
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
-    height: -webkit-min-content;
-    height: -moz-min-content;
-    height: min-content;
     margin: 1rem 1rem 1rem 0;
+    background: none;
     border: none;
   }
 
-  .menu a:hover, .menu a:focus {
-    background-color: #97f0dd;
+  .menu a {
+    width: initial;
+  }
+
+  .menu a#home:hover {
+    background-color: initial;
+    color: #ffffff;
+  }
+
+  .menu a#fb:hover {
+    background-color: initial;
+    color: #4267B2;
+  }
+
+  .menu a#tw:hover {
+    background-color: initial;
+    color: #55acee;
+  }
+
+  .menu a#ig:hover {
+    background-color: initial;
+    color: #e13267;
+  }
+
+  .menu a#am:hover {
+    background-color: initial;
+    color: #ff2d55;
+  }
+
+  .menu a#sp:hover {
+    background-color: initial;
+    color: #1DB954;
+  }
+
+  .menu a#yt:hover {
+    background-color: initial;
+    color: #ff0000;
+  }
+
+  .menu a#bc:hover {
+    background-color: initial;
+    color: #61929c;
+  }
+
+  .menu a#bit:hover {
+    background-color: initial;
+    color: #00B4B3;
   }
   
+  .menu a#co:hover {
+    background-color: initial;
+    color: #ff002b;
+  }
+
   .block-section {
     padding: 1rem;
     grid-column: 1 / span 1;
@@ -217,10 +309,6 @@ form#contact button {
 
   .bit-button {
     width: 9rem !important;
-  }
-
-  #contactform {
-    margin: 0 0 0 auto;
   }
 
   form#contact button:hover {
