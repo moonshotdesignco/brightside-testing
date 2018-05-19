@@ -132,8 +132,6 @@ a {
 
 .block-section {
   padding: 72px 1rem 0.5rem 1rem;
-  z-index: initial;
-  position: relative;
 }
 
 .block-section h1 {
@@ -159,10 +157,6 @@ a {
 
 .bit-event {
   border: none !important;
-}
-
-.bit-offers {
-  position: initial !important;
 }
 
 .bit-button {
