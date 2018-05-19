@@ -136,6 +136,8 @@ a {
 
 .block-section h1 {
   text-transform: uppercase;
+  background: #76d6c6;
+  padding-right: 0.75rem;
 }
 
 .bit-widget-container {
@@ -215,6 +217,11 @@ form#contact button {
     height: min-content;
     border: 2px solid white;
     margin: 0 1rem 1rem auto;
+  }
+
+  .block-section h1 {
+    background: initial;
+    padding: initial;
   }
 
 }
