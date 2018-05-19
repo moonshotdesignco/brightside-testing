@@ -27,6 +27,7 @@ body {
 
 .menu-container {
   position: absolute;
+  z-index: 1;
   width: 100%;
   display: grid;
   -ms-grid-rows: 64px auto;
@@ -67,7 +68,6 @@ body {
 
 .menu {
   display: none;
-  z-index: 100;
   width: 100%;
   background: #76d6c6;
 }
@@ -133,7 +133,7 @@ a {
 .block-section {
   padding: 72px 1rem 0.5rem 1rem;
   z-index: initial;
-  position: initial;
+  position: relative;
 }
 
 .menu-open {
