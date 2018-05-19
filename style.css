@@ -63,7 +63,7 @@ body {
 
 .menu {
   display: none;
-  z-index: 1;
+  z-index: 100;
   width: 100%;
   background: #76d6c6;
 }
@@ -192,7 +192,7 @@ form#contact input, form#contact textarea {
 form#contact textarea {
   resize: vertical;
   height: 6rem;
-  position: initial;
+  position: initial !important;
 }
 
 form#contact button {
