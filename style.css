@@ -136,10 +136,6 @@ a {
   position: relative;
 }
 
-.menu-open {
-  z-index: -1;
-}
-
 .block-section h1 {
   text-transform: uppercase;
 }
