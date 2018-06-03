@@ -144,16 +144,20 @@ form#contact button {
         grid-template-rows: auto;
   }
 
+  a#home:hover {
+    color: #ffffff;
+  }
+
   .menu {
     grid-template-columns: repeat(3, 1fr);
-  }
+  }  
 
   .menu a {
     height: auto;
   }
 
-  .menu a#home:hover {
-    color: #ffffff;
+  .menu a:hover {
+    background-color: #ffffff !important;
   }
 
   .menu a#fb:hover {
