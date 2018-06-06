@@ -70,8 +70,8 @@ img.btn {
 }
 
 img.btn.open {
-  -webkit-transform: rotateX(180deg);
-          transform: rotateX(180deg);
+  -webkit-transform: rotate(540deg);
+          transform: rotate(540deg);
 }
 
 .menu-container {
