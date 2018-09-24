@@ -18,8 +18,8 @@ body {
 }
 
 .section#a {
-  background-image: url("white.svg");
-  background-size: 100%;
+  background-image: url("white-rotate.svg");
+  background-size: contain;
   background-color: black;
 }
 
