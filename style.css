@@ -5,10 +5,14 @@
   box-sizing: border-box;
 }
 
+a {
+  color: inherit;
+}
+
 body {
   display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: 100%;
+  grid-template-columns: 100%;
+  grid-template-rows: min-content;
   position: absolute;
   top: 0;
   left: 0;
@@ -20,18 +24,35 @@ body {
 }
 
 .section#a {
-  background-image: url("condensed_white_rotated.svg");
+  background-image: url("condensed_white.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  height: 33vw;
+  width: 100%;
 }
 
 .section#b {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: repeat(9, 1fr);
+  grid-template-rows: auto;
   -webkit-overflow-scrolling: touch;
-  overflow: auto;
+  box-shadow: 0px 0px 40px 10px #000000;
+  height: min-content;
+  overflow-y: auto;
+}
+
+.section#c {
+  height: 60vw;
+  width: 100%;
+  background: url("background.jpg") center/cover no-repeat;
+  z-index: -1;
+}
+
+.section#d {
+  width: 100%;
+  height: 400px;
+  box-shadow: 0px 0px 80px 20px #000000;
 }
 
 .menu#fb {
@@ -81,7 +102,7 @@ a.menuLink {
   color: white;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (orientation: landscape), (min-width: 700px) {
 
   body {
     grid-template-columns: 100%;
@@ -91,18 +112,11 @@ a.menuLink {
   .section#a {
     background-image: url("condensed_white.svg");
     height: 55vw;
-    box-shadow: 0px 4px 8px 0px #000000c7;
   }  
 
   .section#b {
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 100%;
-  }
-
-  .section#c {
-    height: 66vw;
-    background: url("background.jpg") center/cover no-repeat;
-    z-index: -1;
   }
 
   a.menuLink {
