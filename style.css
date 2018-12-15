@@ -62,7 +62,7 @@ a {
 
 .main-menu-link-img {
   width: 100%;
-  margin: 0.5rem 0;
+  margin: 0;
 }
 
 #music-container {
@@ -229,7 +229,7 @@ form#contact button {
   .main-menu-link-img {
     width: initial;
     height: 4rem;
-    margin-top: 0.5rem;
+    /* margin-top: 0.5rem; */
   }
 
   #music-container {
@@ -260,7 +260,7 @@ form#contact button {
   }
 
   #main-logo {
-    max-width: 500px;
+    max-width: 600px;
     padding: 1rem;
   }
 
@@ -283,8 +283,8 @@ form#contact button {
   }
 
   .main-menu-link-img {
-    height: 2.5rem;
-    margin-top: 0.75rem;
+    height: 3rem;
+    margin-bottom: 0.25rem;
   }
 
   .body-content {
