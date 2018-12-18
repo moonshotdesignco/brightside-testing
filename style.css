@@ -27,14 +27,18 @@ a {
   grid-template-rows: auto;
 }
 
+#logo-link {
+  display: inline-grid;
+  padding: 2rem;
+}
+
 #main-logo {
   width: 100%;
-  padding: 2rem;
 }
 
 #social-icons {
   background: #f62040;
-  box-shadow: 0px 0px 8px 4px #00000027;
+  box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.125);
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 100%;
   padding: 1rem 3rem;
@@ -48,16 +52,18 @@ a {
 }
 
 .grid-item#main-menu {
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.5rem 0;
 }
 
-.grid-item#main-menu, .grid-item.body-content {
-  box-shadow: 0px 2px 4px 0px #00000027;
+.main-menu-link-a {
+  display: inline-grid;
+  padding-bottom: 0.75rem;
 }
 
 .main-menu-link-img {
-  width: 100%;
-  margin: 0;
+  width: initial;
+  max-width: 100%;
+  height: 3rem;
 }
 
 #music-container {
@@ -66,7 +72,7 @@ a {
 
 .album-cover {
   width: 100%;
-  box-shadow: 0px 4px 8px 0px #00000057;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.375);
 }
 
 .album-info {
@@ -89,7 +95,7 @@ a {
   display: inline-block;
   padding: 0.5rem 0.75rem;
   border-radius: 0.25rem;
-  box-shadow: 0px 2px 4px 2px #00000027;
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.125);
 }
 
 .album-link-apple-a {
@@ -110,7 +116,7 @@ a {
   padding-bottom: 56.25%;
   height: 0;
   margin-bottom: 1rem;
-  box-shadow: 0px 2px 4px 0px #00000087;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
 }
 
 .video-iframe-container iframe {
@@ -127,7 +133,7 @@ a {
 
 .member-photo {
   width: 100%;
-  box-shadow: 0px 0px 8px 2px #00000057;
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.375);
 }
 
 .member-photo#will, .member-photo#dillon {
@@ -161,8 +167,6 @@ a {
 
 #submission-form {
   padding: 1rem;
-  max-width: 22rem;
-  margin: auto;
 }
 
 .subheader {
@@ -182,7 +186,7 @@ form#contact input, form#contact textarea {
   max-width: 100%;
   margin: 0 0 0.65625rem 0;
   padding: 0.5rem;
-  box-shadow: 0px 2px 4px 0px #00000037;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 form#contact textarea {
@@ -196,12 +200,24 @@ form#contact button {
   color: #f6f6f6;
   background: #868686;
   padding: 0.5rem 1.75rem;
-  box-shadow: 0px 2px 4px 0px #00000077;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+.grid-container#copyright {
+  grid-template-columns: 1.5rem 1.5rem auto;
+  grid-template-rows: 100%;
+  padding: 2rem 1.5rem 1rem;
+}
+
+#crescent, #drop {
+  width: initial;
+  height: 1.5rem;
+  margin: auto;
 }
 
 #copyright p {
   font-size: 0.625rem;
-  padding: 1rem 1.5rem;
+  margin-left: 0.125rem;
 }
 
 
@@ -212,7 +228,6 @@ form#contact button {
   }
 
   .main-menu-link-img {
-    width: initial;
     height: 4rem;
   }
 
@@ -227,11 +242,6 @@ form#contact button {
     grid-gap: 1rem;
   }
 
-  .centered-copyright#copyright {
-    width: 22rem;
-    margin: auto;
-  }  
-
 }
 
 @media screen and (min-width: 900px) {
@@ -240,9 +250,12 @@ form#contact button {
     grid-template-columns: auto 16rem;
   }
 
+  #logo-link {
+    padding: 1rem;
+  }
+
   #main-logo {
     max-width: 600px;
-    padding: 1rem;
   }
 
   #social-icons {
@@ -252,13 +265,13 @@ form#contact button {
     box-shadow: none;
   }
 
-  .grid-item#main-menu, .grid-item.body-content {
-    box-shadow: none;
-  }
-
   .grid-item#main-menu {
     grid-column: 1 / span 2;
     padding: 0 1.5rem;
+  }
+
+  .main-menu-link-a {
+    padding: initial;
   }
 
   .main-menu-link-img {
@@ -285,14 +298,6 @@ form#contact button {
 
   .member-info-p.small {
     font-size: 1.125rem;
-  }
-
-  .centered-copyright#copyright {
-    grid-column: 1 / span 2;
-  }
-
-  .centered-copyright#copyright p {
-    padding: 1rem;
   }
 
 }
@@ -325,13 +330,18 @@ form#contact button {
     box-shadow: 0px 0px 8px 1px #1DB954;
   }
 
-  .album-container, .member-container-ind, .bit-widget, #submission-form {
-    background: #000000b7;
-    box-shadow: 0px 0px 12px 2px #00000097;
+  .album-container, .member-container-ind, .bit-widget, #contact-form {
+    background: rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.5);
   }
 
-  .album-container, #submission-form {
+  .album-container {
     border-radius: 0.25rem;
+  }
+
+  #submission-form {
+    max-width: 540px;
+    padding: 1.5rem;
   }
 
 }
