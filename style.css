@@ -203,16 +203,8 @@ form#contact button {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
 }
 
-.grid-container#copyright {
-  grid-template-columns: 1.5rem 1.5rem auto;
-  grid-template-rows: 100%;
+#copyright {
   padding: 2rem 1.5rem 1rem;
-}
-
-#crescent, #drop {
-  width: initial;
-  height: 1.5rem;
-  margin: auto;
 }
 
 #copyright p {
@@ -341,7 +333,8 @@ form#contact button {
 
   #submission-form {
     max-width: 540px;
-    padding: 1.5rem;
+    padding: 4rem 1.5rem;
+    margin: auto;
   }
 
 }
