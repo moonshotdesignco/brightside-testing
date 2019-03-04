@@ -31,6 +31,7 @@ a {
   box-sizing: border-box;
   width: 100%;
   min-width: 300px;
+  max-width: 540px;
   height: 100%;
   padding: 1rem;
   margin: auto;
@@ -161,19 +162,7 @@ a {
 
 
 
-@media screen and (orientation: landscape) {
-
-  #main {
-    width: 66vw;
-  }
-
-}
-
-@media screen and (min-width: 900px) {
-
-  #main {
-    width: 33vw;
-  }
+@media (min-width: 900px) and (orientation: landscape) {
 
   .menu-link {
     cursor: pointer;
