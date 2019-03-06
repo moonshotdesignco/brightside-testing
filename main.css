@@ -19,7 +19,7 @@ a {
   color: inherit;
 }
 
-a:hover, a:active {
+a:hover, a:active, a:focus {
   background: white !important;
 }
 
@@ -49,7 +49,7 @@ a:hover, a:active {
   padding: 0 0.75rem;
 }
 
-#trigger:hover, #trigger:active, #trigger.active {
+#trigger:focus, #trigger.active {
   background: black;
   color: #f62040;
 }
@@ -177,6 +177,11 @@ img {
 
   .album {
     max-width: 500px;
+  }
+
+  #trigger:hover, #trigger:active {
+    background: black;
+    color: #f62040;  
   }
 
 }
