@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $("html").on("click tap", function() {
+  $("html, body").on("click tap", function() {
     $("#nav").hide(0);
     $("#trigger").removeClass("active");
   });
