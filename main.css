@@ -1,116 +1,100 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 html, body {
-  width: 100%;
   height: 100%;
-  font-family: 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
-  color: #f6f6f6;
-}
-
-html::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background-image: url("images/bg.jpg");
-  background-position: center;
-  background-size: cover;
+  font-family: 'Helvetica Neue', 'Segoe UI', Helvetica, 'Open Sans', Arial, sans-serif;
+  text-transform: uppercase;
+  line-height: 1;
+  background: #f62040;
+  color: #000000;
 }
 
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
-#main {
-  box-sizing: border-box;
+.container {
   width: 100%;
-  min-width: 300px;
-  max-width: 540px;
-  height: 100%;
-  padding: 1rem;
-  margin: auto;
+  min-height: calc(100% - 4.25rem);
+  padding: 1rem 0;
+}
+
+.container:last-of-type {
+  min-height: initial;
 }
 
 #logo {
-  width: 100%;
-  padding: 1rem 0;
+  float: left;
+  padding-right: 1rem;
 }
 
-#menu {
-  width: 100%;
-  padding: 1rem 0;
+#trigger {
+  float: right;
+  cursor: pointer;
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
 }
 
-.menu-link {
-  position: relative;
-  box-sizing: border-box;
-  font-size: 1.75rem;
-  text-transform: uppercase;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  margin-bottom: 0.25rem;
-  padding-left: 0.5rem;
-  border-radius: 0.25rem;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+#trigger:hover, #trigger.active {
+  background: black;
+  color: #f62040;
 }
 
-.indicator {
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  font-size: 1rem;
-  transition: transform 100ms;
-}
-
-.indicator.rotated {
-  transform: rotate(-45deg);
-}
-
-#body-wrapper, .body-content {
+#nav {
+  list-style: none;
   display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 3rem;
+  background: black;
+  color: #f62040;
+  font-size: 1.5rem;
+  text-align: right;
+  z-index: 100;
+}
+
+#nav li a {
+  display: block;
   width: 100%;
+  padding-left: 1rem;
+  margin-top: 0.5rem;
 }
 
-#body-wrapper {
-  padding-bottom: 1rem;
+#nav li a:last-of-type {
+  margin-bottom: 0.5rem;
 }
 
-.body-content {
-  box-sizing: border-box;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 0.25rem;
-  padding: 0.5rem;
-  text-align: center;
+#nav li a:hover {
+  background: white;
 }
 
-.cover, #merch {
+img {
   width: 100%;
-  margin-bottom: 0.25rem;
+  max-width: 500px;
+  margin-bottom: 1rem;
+}
+
+#date, #group {
+  max-width: unset;
+  margin: 1rem 0 0;
 }
 
 .btn {
   display: inline-block;
-  padding: 0.75rem 1.25rem;
-  margin-left: 0.25rem;
-  margin-bottom: 0.5rem;
+  padding: 0.75rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
   border-radius: 0.25rem;
   font-weight: 700;
   box-shadow: 0px 1px 4px #000000;
-  background: rgba(0, 0, 0, 0.75);
-}
-
-.btn:last-of-type {
-  margin-bottom: 0;
+  background: rgba(0, 0, 0, 0);
 }
 
 .btn.apple {
@@ -150,7 +134,7 @@ a {
   width: 100%;
   height: 0;
   padding-bottom: 56.25%;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   text-align: initial;
 }
 
@@ -160,16 +144,3 @@ a {
   height: 100%;
 }
 
-
-
-@media (min-width: 900px) and (orientation: landscape) {
-
-  .menu-link {
-    cursor: pointer;
-  }
-
-  .menu-link:hover, .btn:hover {
-    background: rgba(230, 230, 230, 0.25) !important;
-  }  
-
-}
