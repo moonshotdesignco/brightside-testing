@@ -44,7 +44,7 @@ a {
   padding: 0 0.75rem;
 }
 
-#trigger:hover, #trigger.active {
+#trigger.active {
   background: black;
   color: #f62040;
 }
@@ -74,7 +74,7 @@ a {
   margin-bottom: 0.5rem;
 }
 
-#nav li a:hover {
+#nav li a:hover, #nav li a:active {
   background: white;
 }
 
@@ -92,7 +92,7 @@ img {
   background: rgba(0, 0, 0, 0);
 }
 
-.btn:hover {
+.btn:hover, .btn:active {
   background: white !important;
 }
 
@@ -172,6 +172,11 @@ img {
 
 @media (min-width: 1050px) {
 
+  #trigger:hover, #trigger:active {
+    background: black;
+    color: #f62040;
+  }
+  
   .album {
     max-width: 500px;
   }
