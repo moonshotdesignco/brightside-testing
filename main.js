@@ -1,13 +1,13 @@
 $(document).ready(function(){
-  $("html, body").on("click tap", function() {
+  $("html, body").click(function() {
     $("#nav").hide(0);
     $("#trigger").removeClass("active");
   });
-  $("#trigger").on("click tap", function() {
+  $("#trigger").click(function() {
     $(this).toggleClass("active");
     $("#nav").toggle(0);
   });
-  $("#trigger, #nav").on("click tap", function(e) {
+  $("#trigger, #nav").click(function(e) {
     e.stopPropagation();
   });
 });
