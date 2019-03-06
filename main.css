@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  -webkit-tap-highlight-color: transparent;
 }
 
 html, body {
@@ -13,6 +12,7 @@ html, body {
   background: #f62040;
   color: black;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a {
