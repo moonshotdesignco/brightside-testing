@@ -17,11 +17,7 @@ html, body {
 
 a {
   color: inherit;
-  -webkit-tap-highlight-color: unset;
-}
-
-a:hover, a:focus, a:active {
-  background: white !important;
+  -webkit-tap-highlight-color: initial;
 }
 
 .container {
@@ -50,7 +46,7 @@ a:hover, a:focus, a:active {
   padding: 0 0.75rem;
 }
 
-#trigger:focus, #trigger:active, #trigger.active {
+#trigger.active {
   background: black;
   color: #f62040;
 }
@@ -176,13 +172,17 @@ img {
     cursor: unset;
   }
 
-  .album {
-    max-width: 500px;
+  a:hover, a:focus {
+    background: white !important;
   }
 
-  #trigger:hover, #trigger:focus, #trigger:active {
+  #trigger:hover {
     background: black;
     color: #f62040;  
+  }
+
+  .album {
+    max-width: 500px;
   }
 
 }
