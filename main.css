@@ -17,9 +17,10 @@ html, body {
 
 a {
   color: inherit;
+  -webkit-tap-highlight-color: unset;
 }
 
-a:hover, a:active, a:focus {
+a:hover, a:focus, a:active {
   background: white !important;
 }
 
@@ -49,7 +50,7 @@ a:hover, a:active, a:focus {
   padding: 0 0.75rem;
 }
 
-#trigger:focus, #trigger.active {
+#trigger:focus, #trigger:active, #trigger.active {
   background: black;
   color: #f62040;
 }
@@ -179,7 +180,7 @@ img {
     max-width: 500px;
   }
 
-  #trigger:hover, #trigger:active {
+  #trigger:hover, #trigger:focus, #trigger:active {
     background: black;
     color: #f62040;  
   }
