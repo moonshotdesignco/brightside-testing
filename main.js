@@ -1,5 +1,5 @@
 $(function(){
-  $(window).click(function() {
+  $("html, body").click(function() {
     $("#nav").hide(0);
     $("#trigger").removeClass("active");
   });
