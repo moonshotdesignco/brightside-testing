@@ -2,12 +2,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 html, body {
   height: 100%;
   cursor: pointer;
+  -webkit-text-size-adjust: 100%;
 }
 
 html {
@@ -43,7 +44,7 @@ body {
 
 a {
   color: inherit;
-  -webkit-tap-highlight-color: initial;
+  -webkit-tap-highlight-color: initial !important;
 }
 
 .container {
@@ -68,7 +69,6 @@ a {
 #trigger {
   float: right;
   cursor: pointer;
-  font-size: 2rem;
   padding: 0 0.75rem;
 }
 
@@ -216,6 +216,10 @@ img {
 
   a:hover, a:focus {
     background: white !important;
+  }
+
+  a#event:hover, a#event:focus {
+    background: none !important;
   }
 
   #trigger:hover {
