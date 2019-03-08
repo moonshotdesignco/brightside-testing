@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="tour">
+<html>
 <head>
   <title>Brightside</title>
   <meta charset="utf-8">
@@ -18,8 +18,8 @@
   <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
   <script src="main.js"></script>
 </head>
-<body>
-  <div class="container">
+<body id="tour">
+  <div class="container" id="header">
     <h1 id="logo">Brightside</h1>
     <span id="trigger"><i class="fas fa-bars fa-2x fa-fw"></i></span>
     <ul id="nav">
@@ -30,12 +30,16 @@
       <li><a href="merch.html">Merch&nbsp;<i class="fas fa-tshirt fa-fw"></i></a></li>
       <li><a href="contact.html">Contact&nbsp;<i class="fas fa-envelope fa-fw"></i></a></li>
     </ul>
-    <h1 class="clear">Tour Dates</h1>
+  </div>
+  <div class="container" id="content">
+    <section class="clear"></section>
+    <h1>Tour Dates</h1>
     <br>
     <a href="https://www.songkick.com/artists/200782" class="songkick-widget" data-theme="light" data-track-button="on" data-detect-style="true" data-background-color="transparent">Upcoming shows</a>
     <script src="//widget.songkick.com/200782/widget.js"></script>
+    <section class="clear"></section>
   </div>
-  <div class="container">
+  <div class="container" id="footer">
     <ul style="list-style: none; font-size: 0.75rem;">
       <li>Designed by <a href="https://moonshotdesignco.com">Moonshot Design Company</a></li>
       <li>All photos by <a href="https://www.kelseyrunge.com">Kelsey Runge Photography</a></li>
