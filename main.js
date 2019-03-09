@@ -4,7 +4,7 @@ $(function(){
     $("html, body").animate({
       scrollTop: $(".container#nav").offset().top
     }, 700);
-    $("body").addClass("freeze");
+    $("html, body").addClass("freeze");
     $(".container#header a, .container#content a, .container#footer a").attr("tabindex", "-1");
     $(".container#nav").animate({
       "min-height": "100%"
@@ -24,7 +24,7 @@ $(function(){
       "min-height": "0%"
     }, 700, function() {
       $(".container#header a, .container#content a, .container#footer a").removeAttr("tabindex");
-      $("body").removeClass("freeze");
+      $("html, body").removeClass("freeze");
     });
   });
 });

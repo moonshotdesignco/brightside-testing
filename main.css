@@ -50,7 +50,8 @@ body#contact {
   background: #6de5a0;
 }
 
-body.freeze {
+html.freeze, body.freeze {
+  position: relative;
   overflow: hidden;
 }
 
