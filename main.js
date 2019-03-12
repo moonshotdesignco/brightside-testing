@@ -3,7 +3,7 @@ $(function(){
     e.preventDefault();
     $("html, body").animate({
       scrollTop: $(".container#nav").offset().top
-    }, 700);
+    }, 300);
     $("html, body").addClass("freeze");
     $(".container#header a, .container#content a, .container#footer a").attr("tabindex", "-1");
     $(".container#nav").animate({
@@ -17,7 +17,7 @@ $(function(){
     e.preventDefault();
     $(".container#nav ul").animate({
       scrollTop: $("body").offset().top
-    }, 700);
+    }, 300);
     $(".container#nav ul").css("overflow", "hidden");
     $(".container#nav ul li a").attr("tabindex", "-1");
     $(".container#nav").animate({

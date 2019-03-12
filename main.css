@@ -169,6 +169,11 @@ body#contact .container#nav {
 #trigger {
   float: right;
   padding: 0 0.75rem;
+  font-size: 2rem;
+}
+
+#trigger #triggertext {
+  display: none;
 }
 
 img {
@@ -240,6 +245,14 @@ img {
 
 
 
+@media (orientation: landscape), (min-width: 600px) {
+
+  #trigger #triggertext {
+    display: initial;
+  }
+
+}
+
 @media (orientation: landscape) {
 
   .album {
@@ -274,6 +287,19 @@ img {
     background: none !important;
   }
 
+  .container#nav {
+    text-align: initial;
+  }
+
+  .container#nav ul li {
+    display: inline-block;
+  }
+
+  .container#nav ul li#close {
+    margin-bottom: 1rem;
+    float: right;
+  }
+  
   .album {
     max-width: 500px;
   }
