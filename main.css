@@ -71,10 +71,8 @@ img.fs-photo {
 .musiclink-a, .memberslink-a, .sociallink-a {
   display: block;
   width: 100%;
-  background: initial;
-  /* line-height: 2; */
   text-align: right;
-  padding-right: 1rem;
+  background: initial;
 }
 
 .musiclink-a#apple {
