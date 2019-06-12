@@ -33,8 +33,8 @@ a {
 }
 
 a:hover, a:active {
-  background: #f4f;
-  background: linear-gradient(rgba(0,0,0,0) 65%, #f4f 0%);
+  background: #fff;
+  background: linear-gradient(rgba(0,0,0,0) 65%, #fff 0%);
 }
 
 a.fs-link {
