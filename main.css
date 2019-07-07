@@ -52,6 +52,11 @@ img.fs-photo {
   height: 100%;
 }
 
+img.fs-cover {
+  width: 500px;
+  height: 500px;
+}
+
 .main {
   width: 100%;
   height: 100%;
@@ -73,6 +78,18 @@ img.fs-photo {
   width: 100%;
   text-align: right;
   background: initial;
+}
+
+.musiclink-a#countonu {
+  background: #ffb700;
+}
+
+.musiclink-a#loveletters {
+  background: #ffd700;
+}
+
+.musiclink-a#had2 {
+  background: #fff700;
 }
 
 .musiclink-a#apple {
